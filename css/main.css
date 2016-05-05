@@ -20,8 +20,12 @@ button {
     outline: none;
     border: none;
 }
-
-
+div {
+    margin: auto;
+}
+img {
+    border-radius: 10px;
+}
 
 /* Pseudo-classes ------------------ */
 a:link{
@@ -87,12 +91,30 @@ button:focus{
 /* Main Styles --------------------- */
 #head-div{
     margin: auto;
+}
+.main-content {
+    width: 100%;
+    max-width: 770px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 
+.room-box {
+    width: 40%;
+    margin: 10px 5%;
+    float: left;
+}
+
+.room-box-img {
+    height: 156.03px;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 2.5%;
 }
 
 #head-img-div{
-    margin: auto;
-    width: 770px;
+    width: 100%;
+    max-width: 770px;
     height: 428px;
     padding-top: 15%;
     border-radius: 10px;
@@ -160,4 +182,15 @@ button:focus{
 }
 
 /* Media Queries ------------------ */
+@media ( max-width: 920px) {
+    .room-box {
+        float: none;
+        width: 100%;
+    }
+    .room-box-img {
+        height: auto;
+    }
+    #head-div {
 
+    }
+}
