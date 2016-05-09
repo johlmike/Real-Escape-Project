@@ -12,8 +12,23 @@
 }
 body {
     font-family: noto-sans, sans-serif;
-    background-color: #F3FFBD;
+    /*background-color: #F3FFBD;*/
 }
 .card-title {
     font-family: noto-sans-bold;
+}
+.card {
+  color: black;
+}
+.modal {
+  color: black;
+}
+#contact-list li{
+  background: transparent;
+}
+#contact-logo {
+  border-radius: 50%;
+}
+hr {
+  border-color: white;
 }

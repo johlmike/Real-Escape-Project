@@ -19,7 +19,7 @@
     </style>
 </head>
 
-<body id="home" data-spy="scroll" data-target=".navbar" data-offset="150">
+<body id="home" data-spy="scroll" data-target=".navbar" data-offset="400" class="bg-inverse">
 
     <!--======================
           modal area
@@ -33,14 +33,54 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h4 class="modal-title">Modal title</h4>
+                    <h4 class="modal-title">預約密室</h4>
                 </div>
                 <div class="modal-body">
-                    <p>One fine body&hellip;</p>
+                    <form>
+                        <fieldset class="form-group">
+                            <label for="name">姓名</label>
+                            <input type="text" class="form-control" id="name">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="mail">電子信箱</label>
+                            <input type="text" class="form-control" id="mail">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="tel">連絡電話</label>
+                            <input type="tel" class="form-control" id="tel">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="people">人數</label>
+                            <input type="number" class="form-control" min=0 max=10 value=0 id="number">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="date">日期</label>
+                            <input type="date" value="2016-05-09" min="2016-05-09" class="form-control" id="date">
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="time">時間</label>
+                            <select class="c-select form-control" id="time" name="time">
+                                <option value="timezone-1">上午 10:30</option>
+                                <option value="timezone-2">下午 12:30</option>
+                                <option value="timezone-3">下午 14:30</option>
+                            </select>
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label for="reser-room">密室名稱</label>
+                            <select class="c-select form-control" id="reser-room" name="reser-room">
+                                <option value="opposite-room">顛倒之室</option>
+                                <option value="strange-room">奇案：1979</option>
+                                <option value="chain-room">奪命鎖鏈</option>
+                                <option value="cage-room">異界籠</option>
+                                <option value="village-room">解救犄角村</option>
+                                <option value="reset-room">迴異路：重置</option>
+                            </select>
+                        </fieldset>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">送出</button>
                 </div>
             </div>
         </div>
@@ -83,6 +123,9 @@
                         <li class="list-group-item">3.天花板內與地板內沒有任何線索，請勿破壞天花板及地板</li>
                     </ul>
                 </div>
+                <div class="modal-footer hidden-lg-down">
+                    <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#reservate" data-dismiss="modal">立即預約</button>
+                </div>
             </div>
         </div>
     </div>
@@ -116,6 +159,9 @@
                         <li class="list-group-item">2.探索過程請務必注意行動安全，嚴禁奔跑、攀爬，若屢勸不聽造成場地或物品毀損，主辦單位視情況得要求賠償</li>
                         <li class="list-group-item">3.天花板內與地板內沒有任何線索，請勿破壞天花板及地板</li>
                     </ul>
+                </div>
+                <div class="modal-footer hidden-lg-down">
+                    <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#reservate" data-dismiss="modal">立即預約</button>
                 </div>
             </div>
         </div>
@@ -156,6 +202,9 @@
                         <li class="list-group-item">3.天花板內與地板內沒有任何線索，請勿破壞天花板及地板</li>
                     </ul>
                 </div>
+                <div class="modal-footer hidden-lg-down">
+                    <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#reservate" data-dismiss="modal">立即預約</button>
+                </div>
             </div>
         </div>
     </div>
@@ -194,6 +243,9 @@
                         <li class="list-group-item">2.探索過程請務必注意行動安全，嚴禁奔跑、攀爬，若屢勸不聽造成場地或物品毀損，主辦單位視情況得要求賠償</li>
                         <li class="list-group-item">3.天花板內與地板內沒有任何線索，請勿破壞天花板及地板</li>
                     </ul>
+                </div>
+                <div class="modal-footer hidden-lg-down">
+                    <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#reservate" data-dismiss="modal">立即預約</button>
                 </div>
             </div>
         </div>
@@ -236,6 +288,9 @@
                         <li class="list-group-item">3.天花板內與地板內沒有任何線索，請勿破壞天花板及地板</li>
                     </ul>
                 </div>
+                <div class="modal-footer hidden-lg-down">
+                    <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#reservate" data-dismiss="modal">立即預約</button>
+                </div>
             </div>
         </div>
     </div>
@@ -275,6 +330,9 @@
                         <li class="list-group-item">3.天花板內與地板內沒有任何線索，請勿破壞天花板及地板</li>
                     </ul>
                 </div>
+                <div class="modal-footer hidden-lg-down">
+                    <button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#reservate" data-dismiss="modal">立即預約</button>
+                </div>
             </div>
         </div>
     </div>
@@ -286,21 +344,40 @@
     <!-- navbar -->
     <nav class="navbar navbar-dark navbar-fixed-top bg-inverse">
         <div class="container">
-            <ul class="nav navbar-nav">
+            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapse-nav">
+                &#9776;
+            </button>
+            <ul class="nav navbar-nav hidden-md-down">
                 <li class="nav-item">
                     <a class="nav-link" href="#home">回最上層</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">什麼是實境逃離</a>
+                    <a class="nav-link" href="#about">關於實境逃離</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#rooms">有哪些未解之謎</a>
+                    <a class="nav-link" href="#rooms">未解之謎</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">聯絡幕後主使</a>
+                    <a class="nav-link" href="#contact">聯絡我們</a>
                 </li>
-                <a href="#home" class="navbar-brand pull-xs-right m-r-0 hidden-xs-down">揪逃離 | 密室資訊情報網</a>
             </ul>
+            <a href="#home" class="navbar-brand pull-xs-right m-r-0">揪逃離 | 密室資訊情報網</a>
+            <div class="collapse p-t-2" id="collapse-nav">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">回最上層</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">關於實境逃離</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rooms">未解之謎</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">聯絡我們</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -308,9 +385,11 @@
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-inverse">
         <div class="container text-sm-center p-t-3">
-            <h1 class="display-3">真實世界的逃離房間</h1>
-            <h5 class="display-5 m-y-3">Real Escape Game</h5>
-            <button type="button" class="btn btn-primary">搶先試玩：顛倒之室</button>
+            <h1 class="text-xs-center hidden-lg-up">真實世界的逃離房間</h1>
+            <h1 class="display-3 hidden-md-down">真實世界的逃離房間</h1>
+            <h5 class="m-y-3 text-xs-center hidden-lg-up">Real Escape Game</h5>
+            <h5 class="display-5 hidden-md-down m-y-3">Real Escape Game</h5>
+            <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#reservate">馬上預約</button>
         </div>
     </div>
 
@@ -319,7 +398,8 @@
     <div class="container">
         <!-- About -->
         <div class="row" id="about">
-            <h1 class="text-xs-center m-b-3">什麼是實境逃離</h1>
+            <h1 class="text-xs-center m-y-3">關於實境逃離</h1>
+            <hr class="m-y-1" />
             <div class="col-lg-4">
                 <h3 class="card-title text-xs-center">真實的驚險體驗</h1>
                 <img src="img/opposite_room_8.jpg" alt="顛倒之室" class="img-fluid m-y-2">
@@ -338,7 +418,8 @@
         </div>
 
         <!-- rooms -->
-        <h1 class="text-xs-center m-y-3" id="rooms">有哪些未解之謎</h1>
+        <h1 class="text-xs-center m-y-3" id="rooms">未解之謎</h1>
+        <hr class="m-y-1" />
         <div class="row">
             <div class="col-md-6 ">
                 <div class="card">
@@ -399,7 +480,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 ">
+            <div class="col-md-6">
                 <div class="card">
                   <a role="button" data-toggle="modal" href="#reset">
                     <img class="card-img-top img-fluid" src="img/reset_1.jpg" alt="迴異路：重置">
@@ -411,6 +492,32 @@
                 </div>
             </div>
         </div>
+
+        <!-- Conatct -->
+        <div class="row" id="contact">
+          <h1 class="text-xs-center m-y-3">聯絡我們</h1>
+          <hr class="m-t-1 m-b-3" />
+          <div class="hidden-md-up m-b-1">
+            <img src="img/placeimg_480_480_people.jpg" alt="logo" class="img-fluid img-rounded center-block" id="contact-logo">
+          </div>
+          <div class="col-md-6">
+            <ul class="list-group" id="contact-list">
+              <li class="list-group-item p-y-2">工作室名稱：咪菇工作室</li>
+              <li class="list-group-item p-y-2">地址：台北市大安區四維路198巷30弄5號</li>
+              <li class="list-group-item p-y-2">連絡電話：0929-388-193</li>
+            </ul>
+          </div>
+          <div class="col-md-4 col-lg-offset-1">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.2252476484077!2d121.54389431541755!3d25.02642884474796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aa2dc92139d1%3A0x2903fe7fc7b917c!2zMTA25Y-w5YyX5biC5aSn5a6J5Y2A5Zub57at6LevMTk45be3MzDlvIQ16Jmf!5e0!3m2!1szh-TW!2stw!4v1462792297614" width="400" height="300" frameborder="0" style="border:0" allowfullscreen class="hidden-sm-down"></iframe>
+          </div>
+        </div>
+        <hr class="m-y-3" />
+        <!-- footer -->
+        <div class="row p-b-3">
+  				<div class="col-md-6 text-xs-center col-md-offset-3">
+  					<small>&copy; 2016 咪菇工作室 &amp; 密室工作室</small>
+  				</div>
+  			</div>
     </div>
 
 
